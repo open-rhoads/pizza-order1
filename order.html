@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <section id="outer">
+        <header>
+            <h1 class="red">Pizza Express</h1>
+            <h2>Ready for pick up in 15 minutes!</h2>
+            <h3>One size (12") includes cheese $7.95</h3>
+        </header>
+        <form action="order.php" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input name="name" id="name" class="textbox" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" name="phone" id="phone" class="textbox" required>
+            </div>
+            <p>Choose your toppings - $1.00 per additional topping</p>
+           <div class="container">
+                <div>
+                    <input type="checkbox" name="topping[]" id="xcheese" value="extra cheese">
+                    <label for="xcheese">Extra Cheese</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="sausage" value="sausage">
+                    <label for="sausage">Sausage</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="meatball" value="meatball">
+                    <label for="meatball">Meatball</label>
+                </div>                 
+            </div>
+           <div class="container">            
+                <div>
+                    <input type="checkbox" name="topping[]" id="tomato" value="tomato">
+                    <label for="tomato">Tomato</label>
+                </div>                   
+                <div>
+                    <input type="checkbox" name="topping[]" id="onion" value="onion">
+                    <label for="onion">Onion</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="olives" value="olives">
+                    <label for="olives">Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="peppers" value="peppers">
+                    <label for="peppers">Peppers</label>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <input type="checkbox" name="topping[]" id="mushroom" value="mushroom">
+                    <label for="mushroom">Mushroom</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="spinach" value="spinach">
+                    <label for="spinach">Spinach</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="topping[]" id="garlic" value="garlic">
+                    <label for="garlic">Garlic</label>
+                </div>      
+                <div>
+                    <input type="checkbox" name="topping[]" id="cilantro" value="cilantro">
+                    <label for="cilantro">Cilantro</label>
+                </div> 
+            </div>                        
+            <input type="submit" value="Send Pizza Order">
+            <input type="reset" value="Clear Form">
+        </form>
+    </section>
+
+
+</body>
+
+</html>
