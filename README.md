@@ -1,2 +1,2 @@
 # pizza-order1
-Demonstration of using HTML checkboxes to send an array of values to backend PHP processing and display confirmation
+This is a demonstration of using HTML checkboxes to send an array of values to the backend PHP processing script and display confirmation with selections and total cost
